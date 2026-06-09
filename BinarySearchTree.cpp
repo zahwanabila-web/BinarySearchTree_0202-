@@ -1,15 +1,16 @@
-#include <iostream>
+#include<iostream>
+#include<string>
 using namespace std;
 
-class Node
+class node
 {
 public:
     string info;
-    Node *leftchild;
-    Node *rightchild;
+    node *leftchild;
+    node *rightchild;
 
-    // constructor for node class
-    Node(string i, Node *l, Node *r)
+    //constructor for node class
+    node(string i, node *l, node *r)
     {
         info = i;
         leftchild = l;
@@ -17,19 +18,13 @@ public:
     }
 };
 
-class BinaryTree
+class binarytree
 {
 public:
-    Node *ROOT;
+    node *root;
 
-    BinaryTree()
+    binarytree()
     {
-        ROOT = NULL; //Initializing ROOT to NULL
-    }
-
-    //Insert a node in the binary search tree
-    void insert(string element)
-    {
-
+        root = NULL;
     }
 };
