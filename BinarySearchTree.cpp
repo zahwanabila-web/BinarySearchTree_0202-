@@ -1,18 +1,35 @@
 #include <iostream>
 using namespace std;
 
-class node
+class Node
 {
 public:
     string info;
-    node *leftchild;
-    node *rightchild;
+    Node *leftchild;
+    Node *rightchild;
 
     // constructor for node class
-    node(string i, node *l, node *r)
+    Node(string i, Node *l, Node *r)
     {
         info = i;
         leftchild = l;
         rightchild = r;
+    }
+};
+
+class BinaryTree
+{
+public:
+    Node *ROOT;
+
+    BinaryTree()
+    {
+        ROOT = NULL; //Initializing ROOT to NULL
+    }
+
+    //Insert a node in the binary search tree
+    void insert(string element)
+    {
+
     }
 };
